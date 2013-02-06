@@ -47,16 +47,14 @@ var loveObject = function() {
 		
 		this.move();
 		
-		img.onload = function() {
-			setInterval(function() {
-				_this.update();
-				_this.drawElement();
-			}, _this.speed);
-			
-			setTimeout(function() {
-				_this.line();
-			}, 10000);
-		}
+		setInterval(function() {
+			_this.update();
+			_this.drawElement();
+		}, _this.speed);
+		
+		setTimeout(function() {
+			_this.line();
+		}, 10000);
 	};
 	
 	
